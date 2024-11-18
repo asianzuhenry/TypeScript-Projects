@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: whitesmoke;
+  height: 10vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  grid-column: 2;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nav {
+  grid-column: 7 / 12;
+  /* background-color: aquamarine; */
+}
+.nav ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+  align-items: center;
+  justify-content: end;
+}
+.nav ul li {
+  padding: 8px;
+  list-style: none;
+}
+.nav ul li button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.5s;
+}
+.nav ul li button:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+  transition: 0.5s;
+}
+
+.cards {
+  padding: 12px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  padding-top: 100px;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 1px 4px 12ch rgba(0, 0, 0, 0.267);
+  display: grid;
+  gap: 8px;
+  padding: 8px;
+  transition: 1s;
+}
+.card:hover {
+  scale: 104%;
+  transition: 1s;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 400px;
+}
+.card h2 {
+  color: rgb(0, 0, 0);
+}
+.card h4 {
+  color: rgb(39, 39, 39);
+}
+.card div {
+  color: grey;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quizcard {
+  width: 100%;
+  max-width: 400px;
+  height: fit-content;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cardquestion {
+  padding: 12px;
+  text-align: center;
+}
+
+.cardoptions {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+}
+.cardoptions li {
+  border: solid;
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+.cardoptions li:hover {
+  cursor: pointer;
+  padding: 12px;
+  /* background-color: rgba(25, 25, 73, 0.329); */
+  transition: 0.5s;
+}
+
+.correct {
+  background-color: rgba(28, 238, 0, 0.76);
+}
+.wrong {
+  background-color: rgba(245, 0, 0, 0.808);
+}
+.results {
+  width: 300px;
+  background-color: whitesmoke;
+  padding: 12px;
+  border-radius: 8px;
+  display: grid;
+}
+.results .score {
+  font-size: 60px;
+}
+.results div button {
+  font-size: large;
+  padding: 12px;
+}
+.results div button:hover {
+  cursor: pointer;
+}
